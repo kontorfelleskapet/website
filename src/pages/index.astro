@@ -1,16 +1,61 @@
 ---
-
+import MainLayout from '../layouts/main.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout>
+  <main>
+    <img src="/logo.svg" class="logo" alt="Kontorfelleskapet logo" />
+    <h1>Velkommen til Kontorfelleskapet!</h1>
+
+    <p>
+      Vi er en gruppe mennesker som ønsker å skape et fellesskap, et sted hvor
+      bedrifter kan samarbeide og vokse sammen. Kontorfelleskapet er tenkt å
+      være et tilbud for etablerte bedrifter, som ønsker å være en del av et
+      felleskap og samtidig ha sin egen identitet.
+    </p>
+
+    <p>
+      Kontorfelleskapet er tenkt som et ikke-kommersielt tilbud, det betyr at
+      det er eid av leietakerne.
+    </p>
+
+    <h2>Stegene mot etablering</h2>
+
+    <p>
+      Simen A. W. Olsen, daglig leder i Bjerk, har vært initativtaker frem til
+      nå, og har funnet frem to aktuelle steder, begge er sentralt rundt
+      Stortinget.
+    </p>
+    <p>
+      Det neste naturlige steget vil være å samle sammen de som er interessert,
+      og det er derfor satt opp tre økter for å treffe så mange som mulig. Dere
+      er hjertelig velkommen til å være med på alle øktene for å møte mest mulig
+      potensielle andre leietakere.
+    </p>
+    <a href="https://simenawolsen.typeform.com/to/vmyL8En9">Meld interesse →</a>
+  </main>
+</MainLayout>
+
+<style>
+  a {
+    color: hsl(239, 82%, 60%);
+    text-decoration: none;
+
+    padding: 1rem 0;
+  }
+
+  h1 {
+    text-wrap: pretty;
+    max-width: 20ch;
+  }
+
+  .logo {
+    max-width: 50px;
+  }
+
+  main {
+    width: min(64ch, 100% - 4rem);
+    margin-inline: auto;
+    padding: 1rem 0;
+  }
+</style>
