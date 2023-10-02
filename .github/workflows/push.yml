@@ -1,0 +1,15 @@
+name: Typical
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - '[0-9]+.x'
+    tags:
+      - '*'
+
+jobs:
+  typical-workflow:
+    name: Lint, format, test and build
+    uses: bjerkio/workflows/.github/workflows/pnpm-typical.yml@v2
